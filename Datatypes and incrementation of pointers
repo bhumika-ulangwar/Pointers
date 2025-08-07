@@ -1,0 +1,49 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num = 10;
+    float f = 5.5;
+    char ch = 'A';
+    double d = 3.14159;
+
+    
+    int* pNum = &num;
+    float* pFloat = &f;
+    char* pChar = &ch;
+    double* pDouble = &d;
+
+   
+    cout << "Before incrementing pointers:\n";
+    cout  << "address int : " << pNum << endl;
+    cout  << "address float : " << pFloat << endl;
+    cout << "address character: "<<pChar<< endl;
+    cout << "address double: " << pDouble << endl;
+
+   pNum++;
+    pFloat++;
+    pChar++;
+    pDouble++;
+
+ 
+    cout << "After incrementing pointers:\n";
+    cout << pNum << endl;
+    cout <<pFloat << endl;
+    cout <<pChar<< endl;
+    cout <<pDouble << endl;
+
+    return 0;
+}
+
+
+//output
+Before incrementing pointers:
+address int : 0x7ffddc0af39c
+address float : 0x7ffddc0af398
+address character: A
+address double: 0x7ffddc0af388
+After incrementing pointers:
+0x7ffddc0af3a0
+0x7ffddc0af39c
+
+0x7ffddc0af390
