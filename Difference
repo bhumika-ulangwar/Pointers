@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int A[] = {10, 20, 30, 40, 50};
+    
+    int* ap1 = &A[2]; 
+    int* ap2 = &A[4]; 
+
+    int diff = *ap2 - *ap1;
+    cout << "Difference (ptr2 - ptr1): "<<diff<< endl;
+
+    return 0;
+}
+
+//output
+Difference (ptr2 - ptr1): 20
