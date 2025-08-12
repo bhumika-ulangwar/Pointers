@@ -85,4 +85,3 @@ We explored pointers in C++ and learned:
 - Their role in dynamic memory allocation.  
 - How they help in efficient data manipulation and structure implementation.  
 
-> ⚠ **Note:** Pointers are powerful but must be handled carefully to avoid memory leaks and undefined behavior.
